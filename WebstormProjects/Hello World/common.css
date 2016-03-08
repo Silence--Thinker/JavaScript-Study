@@ -1,0 +1,9 @@
+    div{
+        color: orange;
+        text-align: center;
+        background-color: rebeccapurple;
+        border: solid 5px;
+        border-color: red;
+        border-radius: 10px;
+        font-size: 30px;
+    }

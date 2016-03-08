@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS选择器</title>
+        <style>
+            div {
+                color: red;
+                font-size: 20px;
+            }
+
+            div.jack {
+                color: orange;
+                font-size: 25px;
+            }
+
+            div , .rose , p , .jack {
+                color: gold;
+
+            }
+
+            #15705 {
+                color: blue;
+            }
+
+            a {
+                color: blueviolet;!important;
+            }
+
+            div + p {
+                text-align: center;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="jack" id="15705">
+            <p class="jack" id="15706">this is a p </p>
+            this is a div
+        </div>
+        <p class="rose" id="15707">this is aother p</p>
+
+        <a class="jack" id="15708">百度</a>
+    </body>
+</html>

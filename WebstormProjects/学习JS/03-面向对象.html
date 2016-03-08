@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript 面相对象 构造函数的概念和实现</title>
+
+        <script>
+            // 构造函数的概念
+            function Person () {
+                this.age = 30;
+                this.name = 'jack';
+                this.eat = function () {
+                    console.log(this.name + ' is ' + this.age + ' year old eat');
+                };
+            }
+            var person1 = new Person();
+            var person2 = new Person();
+            person1.age = 25;
+            person1.name = 'tom';
+            person2.age = 30;
+            person2.name = 'jary';
+
+            person1.eat();
+            person2.eat();
+
+            // 遍历数组的方式
+            // 1. 第一种方式
+            var array = [20, 10, 30, 'jack', 'tom', 'jary'];
+            for (var i = 0, count = array.length; i < count; i++) {
+                console.log(array[i]);
+            }
+            // 2. 第二种方式
+            for (temp in array) {
+                console.log(array[temp]);
+            }
+
+            array.name = 88;
+            array.sex = '男';
+            for (temp in array) {
+                console.log(array[temp]);
+            }
+
+            // 运算符 || &&
+            // 去12345中不为空的值
+            var temp1 = '';
+            var temp2 = '';
+            var temp3 = '';
+            var temp4 = 'tom';
+            var temp5 = 'jack';
+            var temp = temp1 || temp2 || temp3 || temp4 || temp5;
+            console.log(temp);
+
+            var  count = 11;
+            count > 10 && console.log('count 大于 10');
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

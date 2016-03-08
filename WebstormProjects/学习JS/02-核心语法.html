@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JS语法学习学习</title>
+        <script>
+            //alert(8989898989);      //弹窗
+            //console.log(999999999); //打印
+
+            // JS 变量的定义
+            var age = 10;
+            var name = 'jack';
+            sex = '男生';
+            var personal = {};
+            var array = [];
+            function functionName (name){
+
+            };
+            console.log(name + '是'+ sex + ',今年' +age + '岁了');
+
+            // JS 数据类型 四种数据类型
+            console.log(typeof age);
+            console.log(typeof name);
+            console.log(typeof personal);
+            console.log(typeof functionName);
+
+            // JS 函数的定义
+            function eat ( name, food) {
+                console.log(name + '正在吃' + food);
+            }
+            eat('tom', '鸡腿');
+
+            function sum () {
+                var sum = 0;
+                for (var i = 0, count = arguments.length; i < count; i++) {
+                    var temp = arguments[i];
+                    if  (typeof temp == "number")
+                    sum += temp;
+                }
+                return sum;
+            }
+            var sum = sum(10, 20 ,'jack', 'rose', 30, 'tom');
+            console.log(sum);
+
+            // JS 对象的定义
+            var person = {
+                name : 'jack',
+                age : 20,
+                sex : '男',
+                description : function (){
+                    console.log(this.name + ' is a ' + this.age + ' years old ');
+                },
+                dontLike : 'man'
+            };
+            person.description();
+            console.log(person.name);
+            console.log(person['name']);
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
